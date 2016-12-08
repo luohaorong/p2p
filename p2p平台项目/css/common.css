@@ -1,0 +1,96 @@
+#top_nav {
+  background-color: #222222;
+  border-radius: 0;
+}
+#top_nav .tle a {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+#top_nav .tle_nav_right ul li a {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+#sub_nav {
+  margin-top: -20px;
+}
+#sub_nav .logo {
+  width: 130px;
+  height: 39px;
+  display: inline-block;
+  margin-top: 22px;
+  padding-top: 51px;
+  background: url(../img/logo.png) no-repeat;
+}
+#sub_nav .sub_nav_content li a {
+  line-height: 48px;
+  padding-left: 26px;
+  padding-right: 22px;
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+/*内页顶部导航*/
+.el-header {
+	background-color: #333333;
+}
+
+.el-header .navbar-nav>li {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.el-header .navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.el-header .navbar-nav>li>a:HOVER {
+	background: transparent;
+	color: #00a7ff;
+	text-decoration: underline;
+}
+
+.el-header .navbar-nav>li>.el-current-user, .el-header .navbar-nav>li>.el-current-user:HOVER
+	{
+	color: #00a7ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*内页导航*/
+.el-navbar {
+	margin-bottom: 5px;
+}
+
+.el-navbar .navbar-header {
+	padding-top: 25px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+}
+
+.el-navbar .navbar-nav>li>a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-width: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 16px;
+}
+
+.el-navbar .navbar-nav>li>a:HOVER {
+	background: none repeat scroll 0 0 #f0f0f0;
+	color: #09d;
+}
+
+
+/*底部*/
+/* footer网页底部 */
+.el-footer {
+	background-color: #f8f8f8;
+	margin: 20px 0px 20px 0px !important;
+	padding-top: 30px;
+}
+
+.el-footer img {
+	max-width: 100%;
+}

@@ -1,0 +1,32 @@
+#borrow_content .row .el-borrow-item-title {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#borrow_content .row .first {
+  background-color: #40d47e;
+}
+#borrow_content .row .second {
+  background-color: #ec7e20;
+}
+#borrow_content .row .last {
+  background-color: #2ca2ee;
+}
+#borrow_content .row .el-borrow-item-content p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0 0 10px;
+}
+#borrow_content .row .el-borrow-item-content a {
+  padding-left: 10px;
+}
+#borrow_content .row .el-borrow-item-content ul {
+  padding: 0;
+}
+#borrow_content .row .el-borrow-item-content ul li {
+  list-style-type: none;
+  padding-left: 20px;
+  background: url(../img/sequare.png) left no-repeat;
+}

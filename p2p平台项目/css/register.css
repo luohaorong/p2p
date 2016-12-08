@@ -1,0 +1,36 @@
+#el-head {
+  background-color: #333;
+}
+#user_register .container .navbar-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#user_register .container .navbar-header span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #337ab7;
+  padding-left: 20px;
+}
+#el-register .panel .panel-body form .top {
+  color: #999;
+  font-size: 24px;
+  margin-left: 198px;
+}
+#el-register .panel .panel-body form .form-gorup {
+  width: 600px;
+  margin: 0 auto;
+}
+#el-register .panel .panel-body form .form-gorup label {
+  font-weight: bold;
+}
+#el-register .panel .panel-body form .form-gorup .form_text input {
+  width: 220px;
+}
+#el-register .panel .panel-body form .form-gorup .form_text .sub {
+  margin-top: 10px ;
+  margin-bottom: 20px;
+  color: #737373;
+}
+#el-register .panel .panel-body form .last_gorup {
+  margin-left: 270px;
+}

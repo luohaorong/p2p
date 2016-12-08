@@ -1,0 +1,41 @@
+.second {
+  margin-top: -18px;
+}
+.second .my_tabel {
+  height: 250px;
+}
+.second .my_tabel tr td {
+  padding-right: 20px;
+  font-size: 20px;
+}
+.second .my_tabel tr .muted {
+  color: #999;
+}
+.second .my_tabel tr .text-info {
+  color: #0099DD;
+}
+.last_tabel {
+  height: 150px;
+}
+.last_tabel tr td {
+  padding-right: 20px;
+  font-size: 20px;
+}
+.last_tabel tr td .progress-bar-info {
+  width: 100%;
+}
+.last_tabel tr .muted {
+  color: #999;
+}
+.last_tabel tr .text-info {
+  color: #0099DD;
+}
+tbody tr td {
+  font-size: 16px;
+}
+tbody tr .text-info {
+  color: #0099DD;
+}
+tbody tr .muted {
+  color: #999;
+}

@@ -1,0 +1,21 @@
+#borrow_main .el-borrow-header {
+  border-left: 2px solid #0099DD;
+  background-color: #F4F8FA;
+  padding: 30px 0 30px 10px;
+}
+#borrow_main .el-borrow-header .borrow-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #09d;
+}
+#borrow_main .el-borrow-header .row span {
+  color: #31708f !important;
+}
+#borrow_main .el-borrow-form .row .top {
+  padding-left: 154px;
+}
+#borrow_main .el-borrow-form .row .sub {
+  box-shadow: 1px 1px 20px #ddd;
+  border: 1px solid #ddd;
+  padding-left: 28px;
+}

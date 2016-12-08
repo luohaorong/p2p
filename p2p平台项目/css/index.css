@@ -1,0 +1,60 @@
+
+.container-fuil {
+  margin-top: -10px;
+}
+.container-fuil .carousel-inner img {
+  height: 286px;
+  width: 1328px;
+  margin: 0 auto;
+}
+.container-fuil a.left {
+  margin-left: 20px;
+}
+.container-fuil a.right {
+  margin-right: 20px;
+}
+.container .col-md-4 dl {
+  margin-top: 10px;
+}
+.container .col-md-4 dl dt {
+  margin-bottom: 10px;
+  padding-left: 92px;
+}
+.container .col-md-4 dl dd {
+  padding-left: 92px;
+  padding-bottom: 20px;
+}
+.container .col-md-4 .bg-img-0 {
+  background: url(../img/feature01.png) no-repeat;
+}
+.container .col-md-4 .bg-img-1 {
+  background: url(../img/feature02.png) no-repeat;
+}
+.container .col-md-4 .bg-img-2 {
+  background: url(../img/feature03.png) no-repeat;
+}
+.panel .panel-body .panel-title .pan_tile {
+  font: 24px/20px "微软雅黑";
+  padding-bottom: 14px;
+  color: #2E8ECE;
+  font-weight: bold;
+  margin-left: -14px;
+  border-bottom: 2px solid #2E8ECE;
+}
+.panel .table thead tr th {
+  color: #999999;
+}
+.row ul {
+  padding-left: 0px;
+}
+.row ul li {
+  list-style-type: none;
+  line-height: 38px;
+  border-bottom: 1px solid #eee;
+}
+.row ul li a {
+  color: #555;
+}
+.row ul li a:hover {
+  color: #09d;
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="npm-modules/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/realAuth.css"/>
+	</head>
+	<body>
+		<!--上导航-->
+		<div id="top_nav" class="navbar navbar-default">
+			<div class="container tle_nav">
+				<!--电话-->
+				<div class="navbar-header tle">
+					<button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#eee">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand" id="tle">
+						<span class="glyphicon glyphicon-phone-alt"></span>
+						<i>028-86265555</i>
+					</a>
+				</div>
+				<!--导航-->
+				<div class="navbar-collapse collapse tle_nav_right" id="eee">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index01.html">首页</a>
+						</li>
+						<li>
+							<a class="el-current-user" href="personal.html">小强</a>
+						</li>
+						<li>
+							<a href="recharge.html">赶快充值</a>
+						</li>
+						<li>
+							<a href="indexWithoutLogin.html">注销</a>
+						</li>
+						<li>
+							<a href="#">帮助</a>
+						</li>
+						<li>
+							<a id="contact" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='images/contract.png' height='110' width='110'>" href="tencent://message/?Menu=yes&amp;uin=938023535&amp;Service=58&amp;SigT=A7F6FEA02730C98891AB852F491A7A4D085F096B560826D59B41D25BA6628E65574A970B8AC826255BF6C676005B31DCF1594534504117EA72DE0ADB0F910B9326FD474976A2B73079C198C23C3CA9B675BF9E815FC2D7197673110CE92A3CB0F2B81D6EC58D3775227D6C910E1BE02C289964707DE4BCF5&amp;SigU=30E5D5233A443AB2E244466D230790DD0DFB67CDF9A9F88D0EF818CE689A31D58F8DDC3DDF4A4ACDC5EC092189DB5DF36678337BADED9C9FB6CB54F420B2D6C484FE2A5DCB50EDF6">
+								<span class="icon icon-tux">联系客服</span>
+
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--下导航-->
+		<div class="navbar navbar-default" id="sub_nav">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="logo"></a>
+				</div>
+				<ul class="nav navbar-nav sub_nav_content">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="invest.html">我要投资</a>
+					</li>
+					<li>
+						<a href="borrow.html">我要借款</a>
+					</li>
+					<li class="active">
+						<a href="personal.html">个人中心</a>
+					</li>
+					<li>
+						<a href="#">新手指引</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+						<div class="list-group">
+							<a href="#" class="first list-group-item active">
+								投资项目
+							</a>
+						</div>
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								借款项目
+							</a>
+							<a href="#" class="list-group-item">借款项目</a>
+							<a href="#" class="list-group-item">还款明细</a>
+						</div>
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								我的账户
+							</a>
+							<a href="#" class="list-group-item">账户信息</a>
+							<a href="#" class="list-group-item">实名认证</a>
+							<a href="#" class="list-group-item">银行卡管理</a>
+							<a href="#" class="list-group-item">登陆记录</a>
+						</div>
+						<div class="list-group">
+						<a href="#" class="list-group-item active">
+							资产详情
+						</a>
+						<a href="#" class="list-group-item">账户流水</a>
+						<a href="#" class="list-group-item">充值明细</a>
+						<a href="#" class="list-group-item">提现记录</a>
+						<a href="#" class="list-group-item">收款明细</a>
+						</div>
+
+					<div class="list-group">
+						<a href="#" class="last list-group-item active">
+							个人资料
+						</a>
+					</div>
+				</div>
+				<div class="col-md-9 left_content">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							实名认证
+							<button class="btn btn-primary pull-right" id="tianjia">添加</button>
+							<div class="clearfix"></div>
+						</div>
+						<table class="table table-bordered" id="modal_table">
+							<thead>
+								<tr>
+									<th>id</th>
+									<th>姓名</th>
+									<th>身份证</th>
+									<th>电话</th>
+									<th>城市</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>1</td>
+								<td>小强</td>
+								<td>510524116566532522</td>
+								<td>130665652</td>
+								<td>成都</td>
+								<td>审核失败</td>
+								<td>
+									<button class="btn btn-primary">编辑</button>
+									<button class="btn btn-danger">删除</button>
+								</td>
+							</tr>
+						</tbody>	
+						</table>
+							<!--<form class="form-horizontal" id="realAuthForm" method="post" action="realAuth_save.html" novalidate="novalidate">
+							<fieldset>
+								<div class="form-group">
+									<p class="text-center text-danger">为保护您账户安全，实名认证成功之后不能修改信息，请认真填写！</p>
+								</div>
+								<div class="form-group">
+						        	<label class="col-sm-4 control-label ">用户名</label>
+					        		<div class="col-sm-8">
+						        		<p class="form-control-static">小强</p>
+						        	</div>
+						        </div>
+								<div class="form-group">
+						        	<label class="col-sm-4 control-label" for="realName">姓名</label>
+					        		<div class="col-sm-8">
+						        		<input id="realName" name="realName" class="form-control" type="text" value="">
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<label class="col-sm-4  control-label" for="sex">性别</label>
+					        		<div class="col-sm-8">
+						        		<select id="sex" class="form-control" name="sex" size="1">
+											<option value="0">男</option>
+											<option value="1">女</option>
+										</select>
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<label class="col-sm-4  control-label" for="idType">证件类型</label>
+					        		<div class="col-sm-8">
+						        		<select id="idType" class="form-control" name="idtype" class="select_common" size="1">
+											<option value="0">身份证</option>
+											<option value="1">驾驶证</option>
+											<option value="2">军官证</option>
+										</select>
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<label class="col-sm-4  control-label" for="idNumber">证件号码</label>
+					        		<div class="col-sm-8">
+						        		<input id="idNumber" class="form-control" name="idnumber"  type="text" value="">
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<label class="col-sm-4  control-label" for="birthDate">出生日期</label>
+					        		<div class="col-sm-8">
+						        		<input id="birthDate"  class="form-control" name="birthdate" type="text">
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<label class="col-sm-4  control-label" for="address">证件地址</label>
+					        		<div class="col-sm-8">
+						        		<input id="address" class="form-control" name="address"  type="text" style="max-width: 100%;width:500px;">
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<label class="col-sm-4  control-label" for="uploadBtn1">身份证照片</label>
+					        		<div class="col-sm-8">
+					        			<p class="text-help text-primary">请点击“选择图片”,选择证件的正反两面照片。</p>
+					        			<div class="row">
+						        			<a href="javascript:;" class="col-md-3 pull-right" id="viewExample">查看样板</a>
+						        			<div class="col-md-9 pull-left">
+						        				<div class="idCardItem col-md-6">
+							        				<div class="Item_title">
+							        					<a href="javascript:;" id="uploadBtn1" >上传正面</a>
+							        				</div>
+							        				<img alt="" src="" class="uploadImg" id="uploadImg1" />
+							        				<input type="hidden" value="" name="papersimg01" />
+						        				</div>
+						        			<div class="idCardItem col-md-6">
+						        				<div class="Item_title">
+						        					<a href="javascript:;" id="uploadBtn2" >上传反面</a>
+						        				</div>
+						        				<img alt="" src="" class="uploadImg" id="uploadImg2"/>
+						        				<input type="hidden" value="" name="papersimg02" />
+						        			</div>
+						        			</div>	
+					        			</div>
+					        			
+					        			<div class="clearfix"></div>
+						        	</div>
+						        </div>
+						        <div class="form-group">
+						        	<button type="submit" id="asubmit" class="btn btn-primary col-sm-offset-4" data-loading-text="正在提交"><i class="icon-ok"></i> 提交认证</button>
+						        </div>
+							</fieldset>
+						</form>-->
+					</div>
+				
+				</div>
+			</div>
+					
+		</div>
+		
+		<!--模态框-->
+		<div class="modal fade" data-backdrop='false' tabindex="-1" id="btn1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" >
+						<h4 class="pull-left">添加用户</h4>
+						<button class="pull-right close" data-dismiss='modal'>&times;</button>
+						<div class="clearfix"></div>						
+					</div>
+					<div class="modal-body">
+						<form action="###" method="post" class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="">id：</label>
+								<input class="col-sm-8 form-control" style="width: 220px;" type="text" name="id" id="id" placeholder="请输入用户名" />
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="">姓名：</label>
+								<input class="col-sm-8 form-control" style="width: 220px;" type="text" name="name" id="name" placeholder="请输入密码" />
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="">身份证：</label>
+								<input class="col-sm-8 form-control" style="width: 220px;" type="text" name="idCard" id="idCard" placeholder="请输入用户名" />
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="">电话：</label>
+								<input class="col-sm-8 form-control" style="width: 220px;" type="text" name="tel" id="tel" placeholder="请输入密码" />
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="">城市：</label>
+								<input class="col-sm-8 form-control" style="width: 220px;" type="text" name="city" id="city" placeholder="请输入用户名" />
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="">状态：</label>
+								<select name="status" class="col-sm-8 form-control">
+									<option value="1">审核通过</option>
+									<option value="2">审核未通过</option>
+									<option value="3">待审核</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary">登陆</button>
+						<button class="btn btn-success" id="btn3">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!--底部-->
+	<div class="row el-footer">
+			<div class="container">
+				<div class="col-sm-8">
+					<p>专业Java培训、PHP培训、Android培训机构</p>
+					<p>版权所有：&emsp;2006-2016成都源代码教育咨询有限公司</p>
+					<p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+					<p>电&emsp;&emsp;话：&emsp;028-86261949&nbsp; / 400-808-6840&emsp;
+						邮箱：&emsp;yuandaima@itsource.cn</p>
+					<p>
+						<a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>&emsp;&emsp;<a
+							href="http://www.gaj.chengdu.gov.cn">蜀公网安备510114990541</a>
+					</p>
+					<div style="display: inline-block; overflow: hidden; float: left;"></div>
+				</div>
+				<div class="col-sm-2">
+					<div>
+						<p
+								style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微博：</p>
+						<a href="http://t.qq.com/it-source" target="_blank"> <img
+								src="img/tecent.png" alt="Responsive image">
+						</a> <a href="http://weibo.com/cditcast" target="_blank"> <img
+							src="img/sina.png" alt="Responsive image">
+					</a>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div>
+						<p
+								style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微信：</p>
+						<img src="img/wx.jpg" alt="Responsive image"
+							 class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+			$.ajax({
+				type:"get",
+				url:"http://localhost:3000/mockapi",
+				async:false,
+				dataType:'jsonp',
+				success:function(data){
+					showTabel('#modal_table',data);
+				},
+				error:function(err){
+					console.log(err)
+				}
+			});
+			function showTabel(id,data){
+				var $tabody=$(id).find('tbody');
+				
+				var $data=data.itemGroup;
+				$.each($data, function(index,item) {
+					var $tr=$('<tr></tr>');
+					var $td=$('<td><button class="btn btn-success">编辑</button><button class="btn btn-danger">删除</button></td>')
+					$.each(item, function(index1,value) {
+						var $td=$('<td>'+value+'</td>');
+						$tr.append($td);
+					});
+					
+					$tr.append($td);
+					$tabody.append($tr)
+					
+				});
+			}
+			$('#tianjia').click(function(){
+				$()
+			})
+		})
+			
+		</script>
+	</body>
+</html>

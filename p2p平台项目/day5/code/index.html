@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="mock-min.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript">
+	        console.log(Mock)
+	    	var data = Mock.mock({
+  					"string|1-10": "★",
+  					"aa|3":"b",
+  					"url":Mock.Random.url(),
+  					"email":"@email",
+  					"num|1-100":100,
+  					"bool|1-9":false,
+  					"object|2": {
+					    "310000": "上海市",
+					    "320000": "江苏省",
+					    "330000": "浙江省",
+					    "340000": "安徽省"
+  					},
+  					 "array|25": [
+					    "Mock.js",
+					    {
+					    	"id":"@id",
+					    	"phone|+1":13890900001,
+					    	"img":Mock.Random.image('200x100')
+					    }
+					  ],
+					  "city":"@city"
+			});
+		   /*
+		    *  学习如何去定义规则
+		    * {
+		    * 	"key|rule":"value"
+		    *   "key":Mock.Random.city()
+		    * }
+		    */
+		   
+		  
+		   console.log(data);
+	    </script>
+	</head>
+	<body>
+		
+	</body>
+</html>

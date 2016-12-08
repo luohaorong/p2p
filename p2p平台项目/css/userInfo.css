@@ -1,0 +1,26 @@
+.list-group {
+  margin-bottom: 0;
+}
+.list-group .first {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+.list-group .last {
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.list-group .list-group-item:first-child {
+  border-radius: 0;
+}
+.list-group .list-group-item:last-child {
+  border-radius: 0;
+}
+.right-info .panel-body .row {
+  margin-bottom: 10px;
+}
+.right-info .panel-body .row .col-md-8 .tel {
+  width: 250px;
+}
+.right-info .panel-body .row .col-md-8 select {
+  width: 200px;
+}
